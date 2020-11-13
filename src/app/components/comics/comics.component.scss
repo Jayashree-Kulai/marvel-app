@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css');
+.progress,
+h2{
+    font-family: 'Pacifico', cursive;
+    margin-top:150px;
+    margin-left: 47%;
+}
+.comic-list {
+    font-family: 'Pacifico', cursive;
+    margin-right: 10px;
+    background-color: rgba(0, 15, 15, 0.979);
+    display: inline-flex;
+    margin-top:120px;
+
+    .comic {
+        background: rgb(2, 73, 56); 
+        width: 150px;
+        padding: 12px;
+        border-radius: 5px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        display: inline-flex;
+        margin-left: 10px;
+        position: relative;
+        height: 260px;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+       
+            
+        .image {
+            height: 150px;
+            width : 130px;
+            -webkit-transform: scale(1);
+            -ms-transform: scale(1);
+             transform: scale(1);
+            -webkit-transition: .3s ease;
+             transition: .3s ease;
+          }     
+        
+          p {
+              margin: 0;
+              margin-top: 15px;
+              color: rgb(243, 146, 246);
+              font-size: 20px;
+            }  
+    }
+    .comic:nth-child(even) {
+        background: rgb(105, 39, 9);
+      }
+}

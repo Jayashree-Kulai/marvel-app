@@ -1,0 +1,11 @@
+<h2 *ngIf="isLoading">Loading...</h2>
+
+<div class="movie-list">
+    <div class="movie" *ngFor="let movie of movies">
+        <div class="link" routerLink="/movie/{{movie.imdbID}}">
+            <img class="image" src="{{ movie.thumbnail.path +'.'+movie.thumbnail.extension }} "alt="">
+            <p class="name">{{movie.title | slice:0:20}}</p>
+            <p class="year">{{movie.endYear}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+  <h2 *ngIf="isloading">Loading...</h2>
+  <div class="character-list">
+  <div class="character" *ngFor="let char of characterList">
+    <div class="img-container">
+        <img class="image" src="{{ char.thumbnail.path +'.'+char.thumbnail.extension }} "alt="" style="width:300px;height:300px;">
+        <div class="overlay">
+          <div class="details">
+            <h1>{{char.name}}</h1> 
+            <p>ID : {{char.id}}</p>  
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  
+    

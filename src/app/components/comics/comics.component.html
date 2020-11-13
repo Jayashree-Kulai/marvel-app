@@ -1,0 +1,19 @@
+
+  <!-- <div *ngIf="isLoading" class="spinner-border m-5 progress" role="status" style="margin-top: 40%">
+    <span class="sr-only">Loading...</span>
+  </div> -->
+
+<h2 *ngIf="isLoading">Loading...</h2>
+
+<div class="comic-list">
+    <div class="comic" *ngFor="let comic of comics">
+        <div class="link" routerLink="/comic/{{comic.imdbID}}">
+            <!-- <img class="image" [src]="comic.Poster" alt=""> -->
+            <img class="image" src="{{ comic.thumbnail.path +'.'+comic.thumbnail.extension }} "alt="">
+            <p class="name">{{comic.title | slice:0:20}}</p>
+            <p class="year">{{comic.endYear}}</p>
+            <!-- <button (click)="addtoWishList($event,comic)">ADD</button> -->
+        </div>
+    </div>
+</div>
+

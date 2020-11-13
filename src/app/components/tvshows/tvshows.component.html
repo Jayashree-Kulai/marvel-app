@@ -1,0 +1,12 @@
+<h2 *ngIf="isLoading">Loading...</h2>
+
+<div class="tvshow-list">
+    <div class="tvshow" *ngFor="let tvshow of tvshows">
+        <div class="link" routerLink="/tvshow/{{tvshow.imdbID}}">
+            <!-- <img class="image" [src]="tvshow.Poster" alt=""> -->
+            <img class="image" src="{{ tvshow.thumbnail.path +'.'+tvshow.thumbnail.extension }} "alt="">
+            <p class="name">{{tvshow.title}}</p>
+            <p class="year">{{tvshow.endYear}}</p>
+        </div>
+    </div>
+</div>
